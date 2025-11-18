@@ -9,6 +9,10 @@ android {
         version = release(36)
     }
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.app3"
         minSdk = 26
@@ -44,6 +48,8 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
+    implementation("com.squareup.retrofit2:retrofit:2.5.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.5.0")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ebony">#2f362f</color>
+    <color name="branco">#f8faf9</color>
+    <color name="sand_dollar">#929eaf</color>
+    <color name="celadon">#788978</color>
+    <color name="botao_principal">#3A475E</color>
+    <color name="botao_principal_texto">#FFFFFFFF</color>
+
+</resources>

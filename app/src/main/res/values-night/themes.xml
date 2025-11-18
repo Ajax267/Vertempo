@@ -1,7 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.App3" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorOnPrimary">@color/ebony</item>
+        <item name="android:colorBackground">@color/sand_dollar</item>
+        <item name="colorSurface">@color/branco</item>
+        <item name="colorOnSurface">@color/celadon</item>
+        <item name="fontFamily">@font/alata</item>
+        <item name="android:textColor">@color/white</item>
+
+
     </style>
 </resources>

@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">App3</string>
+    <string name="app_name">Vertempo</string>
     <string name="obter_previsao">OBTER PREVISÃO</string>
+    <string name="nome_da_cidade_hint">Nome da Cidade</string>
+    <string name="voltar">voltar</string>
+    <string name="estado_ensolarado">ensolarado</string>
+    <string name="estado_nublado">nublado\n</string>
+    <string name="estado_chuvoso">chuvoso</string>
+    <string name="titulo_relatorio">Relatório de previsão</string>
 </resources>

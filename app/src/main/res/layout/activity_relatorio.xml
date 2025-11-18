@@ -5,6 +5,154 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RelatorioActivity">
+    tools:context=".ui.RelatorioActivity">
+
+    <ImageView
+        android:id="@+id/btnVoltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/voltar"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloRelatorio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:gravity="center"
+        android:text="@string/titulo_relatorio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/btnVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/btnVoltar"
+        app:layout_constraintTop_toTopOf="@id/btnVoltar" />
+
+    <TextView
+        android:id="@+id/tvCidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/layoutEstado"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCidade">
+
+        <!-- Sol -->
+        <ImageView
+            android:id="@+id/imgSol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/estado_ensolarado"
+            android:src="@drawable/sun_svgrepo_com"
+            android:visibility="gone" />
+
+        <!-- Nublado -->
+        <ImageView
+            android:id="@+id/imgNublado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/estado_nublado"
+            android:src="@drawable/weather_color_sun_cloud_svgrepo_com"
+            android:visibility="gone" />
+
+        <!-- Chuva -->
+        <ImageView
+            android:id="@+id/imgChuva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/estado_chuvoso"
+            android:src="@drawable/rain_alt_svgrepo_com"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvResumo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="31ºC, céu limpo"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEstado" />
+
+    <LinearLayout
+        android:id="@+id/layoutDetalhes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResumo">
+
+        <TextView
+            android:id="@+id/tvTempMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Temperatura máx: 33ºC" />
+
+        <TextView
+            android:id="@+id/tvTempMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Temperatura mín: 24ºC" />
+
+        <TextView
+            android:id="@+id/tvSensacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Sensação térmica: 36ºC" />
+
+        <TextView
+            android:id="@+id/tvVento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Velocidade do vento: 33 km/h" />
+
+        <TextView
+            android:id="@+id/tvUmidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Umidade do ar: 61%" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
